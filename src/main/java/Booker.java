@@ -53,6 +53,7 @@ public class Booker {
                 System.out.println("Goodbye, enjoy your holiday!");
             }
         }
+
         //          Adding a new flight
         System.out.println("Enter new flight destination:");
         String newDestination = scanner.nextLine();
