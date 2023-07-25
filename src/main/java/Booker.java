@@ -53,5 +53,19 @@ public class Booker {
                 System.out.println("Goodbye, enjoy your holiday!");
             }
         }
+        //          Adding a new flight
+        System.out.println("Enter new flight destination:");
+        String newDestination = scanner.nextLine();
+
+        System.out.println("Enter flight ID of new destination:");
+        String newFlightID = scanner.nextLine();
+
+        airport.addFlight(new Flight(newDestination,newFlightID));
+
+//              Cancelling flights
+        System.out.println("Enter cancelled flight ID:");
+        String cancelledFlightID = scanner.nextLine();
+
+        airport.cancelFlight(cancelledFlightID);
     }
 }
