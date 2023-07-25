@@ -16,13 +16,8 @@ public class Airport {
         // find in the array list the flight that matches the flightID
         // get that index
         // remove that flight
-        int flightIndex = 0;
-        for (Flight flight : this.flights) {
-            if (flight.getFlightID().equals(flightID)) {
-                flightIndex = this.flights.indexOf(flight);
-            }
-        }
-        this.flights.remove(flightIndex);
+//        removes flight if the flight ID matches
+        this.flights.removeIf(flight -> flight.getFlightID().equals(flightID));
     }
 
     public void displayFlights() {
