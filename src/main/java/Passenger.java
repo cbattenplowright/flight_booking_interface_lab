@@ -1,5 +1,5 @@
 public class Passenger {
-
+// Class containing properties and behaviours for each passenger object
     private String name;
     private String phoneNumber;
     private String email;
